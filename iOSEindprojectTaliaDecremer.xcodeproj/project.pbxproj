@@ -13,6 +13,14 @@
 		0906D1A723E192A700235DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0906D1A523E192A700235DFC /* Main.storyboard */; };
 		0906D1A923E192B200235DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0906D1A823E192B200235DFC /* Assets.xcassets */; };
 		0906D1AC23E192B200235DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0906D1AA23E192B200235DFC /* LaunchScreen.storyboard */; };
+		0906D1B423E1957900235DFC /* vistival.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0906D1B323E1957900235DFC /* vistival.jpg */; };
+		0906D1B723E19FC100235DFC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0906D1B623E19FC100235DFC /* MapKit.framework */; };
+		0906D1B923E1B2B900235DFC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1B823E1B2B900235DFC /* MapViewController.swift */; };
+		0906D1BB23E1B2F100235DFC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1BA23E1B2F100235DFC /* TableViewController.swift */; };
+		0906D1BD23E1B33A00235DFC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1BC23E1B33A00235DFC /* HistoryViewController.swift */; };
+		0906D1BF23E1B3A500235DFC /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1BE23E1B3A500235DFC /* Act.swift */; };
+		0906D1C123E1B5C600235DFC /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1C023E1B5C600235DFC /* DataSource.swift */; };
+		0906D1C523E1BBF800235DFC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1C423E1BBF800235DFC /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		0906D1A823E192B200235DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0906D1AB23E192B200235DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0906D1AD23E192B200235DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0906D1B323E1957900235DFC /* vistival.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vistival.jpg; sourceTree = "<group>"; };
+		0906D1B623E19FC100235DFC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0906D1B823E1B2B900235DFC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0906D1BA23E1B2F100235DFC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0906D1BC23E1B33A00235DFC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0906D1BE23E1B3A500235DFC /* Act.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
+		0906D1C023E1B5C600235DFC /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		0906D1C423E1BBF800235DFC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0906D1B723E19FC100235DFC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,7 @@
 			children = (
 				0906D19E23E192A700235DFC /* iOSEindprojectTaliaDecremer */,
 				0906D19D23E192A700235DFC /* Products */,
+				0906D1B523E19FC100235DFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +78,26 @@
 				0906D1A123E192A700235DFC /* SceneDelegate.swift */,
 				0906D1A323E192A700235DFC /* ViewController.swift */,
 				0906D1A523E192A700235DFC /* Main.storyboard */,
+				0906D1B323E1957900235DFC /* vistival.jpg */,
 				0906D1A823E192B200235DFC /* Assets.xcassets */,
 				0906D1AA23E192B200235DFC /* LaunchScreen.storyboard */,
 				0906D1AD23E192B200235DFC /* Info.plist */,
+				0906D1B823E1B2B900235DFC /* MapViewController.swift */,
+				0906D1BA23E1B2F100235DFC /* TableViewController.swift */,
+				0906D1BC23E1B33A00235DFC /* HistoryViewController.swift */,
+				0906D1BE23E1B3A500235DFC /* Act.swift */,
+				0906D1C023E1B5C600235DFC /* DataSource.swift */,
+				0906D1C423E1BBF800235DFC /* TableViewCell.swift */,
 			);
 			path = iOSEindprojectTaliaDecremer;
+			sourceTree = "<group>";
+		};
+		0906D1B523E19FC100235DFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0906D1B623E19FC100235DFC /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0906D1AC23E192B200235DFC /* LaunchScreen.storyboard in Resources */,
+				0906D1B423E1957900235DFC /* vistival.jpg in Resources */,
 				0906D1A923E192B200235DFC /* Assets.xcassets in Resources */,
 				0906D1A723E192A700235DFC /* Main.storyboard in Resources */,
 			);
@@ -139,8 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0906D1A423E192A700235DFC /* ViewController.swift in Sources */,
+				0906D1BF23E1B3A500235DFC /* Act.swift in Sources */,
 				0906D1A023E192A700235DFC /* AppDelegate.swift in Sources */,
+				0906D1C523E1BBF800235DFC /* TableViewCell.swift in Sources */,
 				0906D1A223E192A700235DFC /* SceneDelegate.swift in Sources */,
+				0906D1BD23E1B33A00235DFC /* HistoryViewController.swift in Sources */,
+				0906D1BB23E1B2F100235DFC /* TableViewController.swift in Sources */,
+				0906D1C123E1B5C600235DFC /* DataSource.swift in Sources */,
+				0906D1B923E1B2B900235DFC /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.ehb.iOSEindprojectTaliaDecremer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.ehb.iOSEindprojectTaliaDecremer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
