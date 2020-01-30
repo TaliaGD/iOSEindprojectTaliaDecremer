@@ -16,11 +16,13 @@
 		0906D1B423E1957900235DFC /* vistival.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0906D1B323E1957900235DFC /* vistival.jpg */; };
 		0906D1B723E19FC100235DFC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0906D1B623E19FC100235DFC /* MapKit.framework */; };
 		0906D1B923E1B2B900235DFC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1B823E1B2B900235DFC /* MapViewController.swift */; };
-		0906D1BB23E1B2F100235DFC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1BA23E1B2F100235DFC /* TableViewController.swift */; };
 		0906D1BD23E1B33A00235DFC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1BC23E1B33A00235DFC /* HistoryViewController.swift */; };
 		0906D1BF23E1B3A500235DFC /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1BE23E1B3A500235DFC /* Act.swift */; };
-		0906D1C123E1B5C600235DFC /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1C023E1B5C600235DFC /* DataSource.swift */; };
+		0906D1C123E1B5C600235DFC /* ActDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1C023E1B5C600235DFC /* ActDataSource.swift */; };
 		0906D1C523E1BBF800235DFC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1C423E1BBF800235DFC /* TableViewCell.swift */; };
+		0906D1C923E2CB8F00235DFC /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1C823E2CB8F00235DFC /* Stage.swift */; };
+		0906D1CB23E2D17500235DFC /* StageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0906D1CA23E2D17500235DFC /* StageDataSource.swift */; };
+		090B7F5623E30941007DF0D9 /* Line_Up_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B7F5523E30941007DF0D9 /* Line_Up_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +37,13 @@
 		0906D1B323E1957900235DFC /* vistival.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vistival.jpg; sourceTree = "<group>"; };
 		0906D1B623E19FC100235DFC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0906D1B823E1B2B900235DFC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		0906D1BA23E1B2F100235DFC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		0906D1BC23E1B33A00235DFC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		0906D1BE23E1B3A500235DFC /* Act.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
-		0906D1C023E1B5C600235DFC /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		0906D1C023E1B5C600235DFC /* ActDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActDataSource.swift; sourceTree = "<group>"; };
 		0906D1C423E1BBF800235DFC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0906D1C823E2CB8F00235DFC /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		0906D1CA23E2D17500235DFC /* StageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageDataSource.swift; sourceTree = "<group>"; };
+		090B7F5523E30941007DF0D9 /* Line_Up_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line_Up_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +87,13 @@
 				0906D1AA23E192B200235DFC /* LaunchScreen.storyboard */,
 				0906D1AD23E192B200235DFC /* Info.plist */,
 				0906D1B823E1B2B900235DFC /* MapViewController.swift */,
-				0906D1BA23E1B2F100235DFC /* TableViewController.swift */,
 				0906D1BC23E1B33A00235DFC /* HistoryViewController.swift */,
 				0906D1BE23E1B3A500235DFC /* Act.swift */,
-				0906D1C023E1B5C600235DFC /* DataSource.swift */,
+				0906D1C023E1B5C600235DFC /* ActDataSource.swift */,
 				0906D1C423E1BBF800235DFC /* TableViewCell.swift */,
+				0906D1C823E2CB8F00235DFC /* Stage.swift */,
+				0906D1CA23E2D17500235DFC /* StageDataSource.swift */,
+				090B7F5523E30941007DF0D9 /* Line_Up_ViewController.swift */,
 			);
 			path = iOSEindprojectTaliaDecremer;
 			sourceTree = "<group>";
@@ -176,11 +182,13 @@
 				0906D1BF23E1B3A500235DFC /* Act.swift in Sources */,
 				0906D1A023E192A700235DFC /* AppDelegate.swift in Sources */,
 				0906D1C523E1BBF800235DFC /* TableViewCell.swift in Sources */,
+				090B7F5623E30941007DF0D9 /* Line_Up_ViewController.swift in Sources */,
+				0906D1C923E2CB8F00235DFC /* Stage.swift in Sources */,
 				0906D1A223E192A700235DFC /* SceneDelegate.swift in Sources */,
 				0906D1BD23E1B33A00235DFC /* HistoryViewController.swift in Sources */,
-				0906D1BB23E1B2F100235DFC /* TableViewController.swift in Sources */,
-				0906D1C123E1B5C600235DFC /* DataSource.swift in Sources */,
+				0906D1C123E1B5C600235DFC /* ActDataSource.swift in Sources */,
 				0906D1B923E1B2B900235DFC /* MapViewController.swift in Sources */,
+				0906D1CB23E2D17500235DFC /* StageDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

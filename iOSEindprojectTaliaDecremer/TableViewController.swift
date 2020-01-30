@@ -6,81 +6,49 @@
 //  Copyright © 2020 Ehb. All rights reserved.
 //
 
+
+
 import UIKit
 
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
-    var dag1Items:[Act] = []
-    var dag2Items:[Act] = []
-    var data = DataSource.init()
+    
+    
+    let data:DataSource = DataSource.init()
+    //var dag1Items:[Act] = []
+   // var dag2Items:[Act] = []
+    //var data = DataSource.init()
 
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-            for item in data.acts {
-            if item.day == "Friday 7 February"{
-                dag1Items.append(item)
-            }else{
-                dag2Items.append(item)
-            }
-        }
-        
-        print(dag1Items)
-           print(dag2Items)
-
     }
-        
-        
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     
-
-    // MARK: - Table view data source
-
-     func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 2
-    }
-
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        switch section {
-        case 0:
-            return dag1Items.count
-         case 1:
-            return dag2Items.count
-        default:
-            return 0
-        }
-    }
-
-   
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func numberOfSections(in tableView: UITableView) -> Int{
+           return 1
+    
+       }
+    
+       func tableView(_ tableView: UITableView,
+                      numberOfRowsInSection section:Int) -> Int{
         
-        let cellIdentifier = "cell"
+        for item in data.acts {
+        if item.day == "Friday 7 February"{
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
-        switch indexPath.section {
-        case 0:
-            cell.artistBt.accessibilityLabel = dag1Items[indexPath.row]
-        default:
-            <#code#>
-        }
-        
-    }
-//        let currentCell:TableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
-//        let currentAct = data.acts[indexPath.row]
-//
-//        currentCell.artistBt.accessibilityLabel = currentAct.name
-//        currentCell.timeLbl.text = currentAct.hour
-//        currentCell.stageBt.accessibilityLabel = currentAct.stage
-//
-//
-//
-//        return currentCell
+            return data.acts.count  }
+            func tableView(_ tableView:UITableView, cellForRowAt indexPath:
+                   IndexPath) -> UITableViewCell{
+                   //maakt verwijzingen naar cell in storyboard
+                   let currentCell:TableViewCell = tableView.dequeueReusableCell(withIdentifier:"cell") as!TableViewCell
+                   //product voorde juiste rij uit datascource halen
+                let currentAct = data.acts[indexPath.row]
+                   //cell opvullen met product
+                
+                
+                currentCell.artistBt.accessibilityLabel = currentAct.name
+                currentCell.timeLbl.text = currentAct.hour
+                currentCell.stageBt.accessibilityLabel = currentAct.stage
+                
+            
+                   return currentCell
 
     }
     
@@ -130,4 +98,5 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     */
 
+}
 }
