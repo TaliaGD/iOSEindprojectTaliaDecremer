@@ -28,7 +28,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.26126363870000002" blue="0.48551595209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.43529411764705883" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wea-f8-wfE" firstAttribute="centerY" secondItem="qKz-nd-KzI" secondAttribute="centerY" id="DuR-3A-Gx8"/>
                             <constraint firstItem="wea-f8-wfE" firstAttribute="centerX" secondItem="qKz-nd-KzI" secondAttribute="centerX" id="kML-IM-fZL"/>

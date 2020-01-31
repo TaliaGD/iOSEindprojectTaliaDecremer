@@ -51,30 +51,31 @@ class MapViewController: UIViewController {
         
     }
 }
-
-extension ViewController:MKMapViewDelegate{
-    
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
-        if let soi = annotation as? Stage{
-            //nagaan of er aleenpin was getekend
-            if let customView = mapView.dequeueReusableAnnotationView(withIdentifier: "pin"){
-                //soi=stage of interest
-                customView.annotation = soi
-                
-                return customView
-            }else{
-                //pin bestond nog niet, pin opbouwen
-                //gebruiken van een bestaande annotatie klasse uit gemak
-                let customView = MKPinAnnotationView.init(annotation: soi, reuseIdentifier: "pin")
-                customView.pinTintColor = UIColor.darkGray
-                customView.animatesDrop = true
-                customView.canShowCallout = true
-                
-                return customView
-            }
-        }
-        return nil
-        
-    }
-}
+//ik laat custemised pin weg aangezien ik er nog geen permanent label aan toe gevoegd heb
+//extension MapViewController:MKMapViewDelegate{
+//
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//
+//        if let soi = annotation as? Stage{
+//            //nagaan of er aleenpin was getekend
+//            if let customView = mapView.dequeueReusableAnnotationView(withIdentifier: "pin"){
+//                //soi=stage of interest
+//                customView.annotation = soi
+//
+//                return customView
+//            }else{
+//                //pin bestond nog niet, pin opbouwen
+//                //gebruiken van een bestaande annotatie klasse uit gemak
+//                let customView = MKPinAnnotationView.init(annotation: soi, reuseIdentifier: "pin")
+//                customView.pinTintColor = UIColor.darkGray
+//                customView.animatesDrop = true
+//                customView.canShowCallout = true
+//
+//
+//                return customView
+//            }
+//        }
+//        return nil
+//
+//    }
+//}
