@@ -27,6 +27,7 @@
 		090B7F5B23E32581007DF0D9 /* AdmiralFreebie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 090B7F5823E32581007DF0D9 /* AdmiralFreebie.jpg */; };
 		090B7F5C23E32581007DF0D9 /* ReelBigFish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 090B7F5923E32581007DF0D9 /* ReelBigFish.jpg */; };
 		090B7F5E23E328EB007DF0D9 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B7F5D23E328EB007DF0D9 /* ArtistViewController.swift */; };
+		090B7F6223E43EEA007DF0D9 /* vis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 090B7F6123E43EEA007DF0D9 /* vis.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		090B7F5823E32581007DF0D9 /* AdmiralFreebie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AdmiralFreebie.jpg; sourceTree = "<group>"; };
 		090B7F5923E32581007DF0D9 /* ReelBigFish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ReelBigFish.jpg; sourceTree = "<group>"; };
 		090B7F5D23E328EB007DF0D9 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		090B7F6123E43EEA007DF0D9 /* vis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vis.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				0906D1B323E1957900235DFC /* vistival.jpg */,
 				0906D1A823E192B200235DFC /* Assets.xcassets */,
 				0906D1AA23E192B200235DFC /* LaunchScreen.storyboard */,
+				090B7F6123E43EEA007DF0D9 /* vis.jpg */,
 				0906D1AD23E192B200235DFC /* Info.plist */,
 				0906D1B823E1B2B900235DFC /* MapViewController.swift */,
 				0906D1BC23E1B33A00235DFC /* HistoryViewController.swift */,
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				090B7F5B23E32581007DF0D9 /* AdmiralFreebie.jpg in Resources */,
+				090B7F6223E43EEA007DF0D9 /* vis.jpg in Resources */,
 				0906D1AC23E192B200235DFC /* LaunchScreen.storyboard in Resources */,
 				090B7F5A23E32581007DF0D9 /* Swashbuckle.jpg in Resources */,
 				0906D1B423E1957900235DFC /* vistival.jpg in Resources */,
