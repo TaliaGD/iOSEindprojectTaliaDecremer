@@ -67,9 +67,23 @@ class Line_Up_ViewController: UIViewController ,UITableViewDataSource, UITableVi
             return "Saturday"
         }
     }
-    
-    
-    
+    //MARK: NAVIGATION
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailsSegue"{
+            //welke ndex (cell) is geselecteerd
+            let selectedIndexPath: IndexPath = tableView.indexPath(for: sender as! TableViewCell)!
+            //welk act hoort bij de cell
+            var selectedAct:Act
+            if selectedIndexPath.section == 0 {
+                selectedAct = fridayActs[selectedIndexPath.row]
+            } else {
+                selectedAct = saturdayActs[selectedIndexPath.row]
+            }
+            //naar welk scherm gaat de navigatie
+            let destinationVC:ArtistViewController = segue.destination as! ArtistViewController
+            //geef effectief het act door aan het volgend scherm
+            destinationVC.selectedAct = selectedAct}
+    }
     /*
      // MARK: - Navigation
      

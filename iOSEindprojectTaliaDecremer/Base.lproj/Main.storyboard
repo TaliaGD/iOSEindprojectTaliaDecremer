@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Jb-0E-khA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="160"/>
+            <point key="canvasLocation" x="2130" y="251"/>
         </scene>
         <!--History-->
         <scene sceneID="GFa-vo-ewy">
@@ -222,6 +222,9 @@
                                                     <state key="normal" title="Name artist">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="actTapped:" destination="pGf-W0-6IA" eventType="touchUpInside" id="ezD-cv-KVB"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVE-6t-8ge">
                                                     <rect key="frame" x="264" y="11.5" width="38" height="21.5"/>
@@ -234,6 +237,9 @@
                                                     <state key="normal" title="Stage">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="Gsl-no-gRL" kind="show" id="aen-EP-EHj"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -272,11 +278,71 @@
                     <navigationItem key="navigationItem" title="Line Up" id="9aK-1z-e2f"/>
                     <connections>
                         <outlet property="tableView" destination="5fP-mt-5sk" id="D1K-qh-TvI"/>
+                        <segue destination="vxV-dn-Mvn" kind="show" identifier="detailsSegue" id="lpo-Qm-udb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kz4-xU-kxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1946.4000000000001" y="-542.87856071964018"/>
+        </scene>
+        <!--Artist View Controller-->
+        <scene sceneID="9gp-0k-0cJ">
+            <objects>
+                <viewController id="vxV-dn-Mvn" customClass="ArtistViewController" customModule="iOSEindprojectTaliaDecremer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R29-SJ-xI5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReelBigFish.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bCa-l4-ftk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="5K4-3B-AkA"/>
+                                    <constraint firstAttribute="height" constant="178" id="VKh-Mg-8gN"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cQU-gT-l5W">
+                                <rect key="frame" x="20" y="284" width="335" height="363"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te8-8v-Wo7">
+                                <rect key="frame" x="0.0" y="257" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="te8-8v-Wo7" firstAttribute="centerX" secondItem="R29-SJ-xI5" secondAttribute="centerX" id="0Jx-Fb-PhH"/>
+                            <constraint firstItem="te8-8v-Wo7" firstAttribute="top" secondItem="bCa-l4-ftk" secondAttribute="bottom" constant="15" id="1YL-AT-2Db"/>
+                            <constraint firstItem="bCa-l4-ftk" firstAttribute="centerX" secondItem="R29-SJ-xI5" secondAttribute="centerX" id="7Yt-dI-V2v"/>
+                            <constraint firstItem="cQU-gT-l5W" firstAttribute="leading" secondItem="lJa-F8-fOZ" secondAttribute="leading" constant="20" id="9iH-Wm-2Bd"/>
+                            <constraint firstItem="bCa-l4-ftk" firstAttribute="top" secondItem="lJa-F8-fOZ" secondAttribute="top" constant="20" id="Rdx-nd-01m"/>
+                            <constraint firstItem="bCa-l4-ftk" firstAttribute="trailing" secondItem="lJa-F8-fOZ" secondAttribute="trailing" id="T9p-DV-dFd"/>
+                            <constraint firstItem="te8-8v-Wo7" firstAttribute="leading" secondItem="lJa-F8-fOZ" secondAttribute="leading" id="TfD-2X-Gau"/>
+                            <constraint firstItem="lJa-F8-fOZ" firstAttribute="trailing" secondItem="te8-8v-Wo7" secondAttribute="trailing" id="Uue-US-ArQ"/>
+                            <constraint firstItem="bCa-l4-ftk" firstAttribute="leading" secondItem="lJa-F8-fOZ" secondAttribute="leading" id="Xsb-w6-97Q"/>
+                            <constraint firstItem="lJa-F8-fOZ" firstAttribute="bottom" secondItem="cQU-gT-l5W" secondAttribute="bottom" constant="20" id="hl2-ox-dCP"/>
+                            <constraint firstItem="cQU-gT-l5W" firstAttribute="centerX" secondItem="R29-SJ-xI5" secondAttribute="centerX" id="j6R-ya-PrV"/>
+                            <constraint firstItem="cQU-gT-l5W" firstAttribute="top" secondItem="te8-8v-Wo7" secondAttribute="bottom" constant="6" id="jfP-zV-sDy"/>
+                            <constraint firstItem="lJa-F8-fOZ" firstAttribute="trailing" secondItem="cQU-gT-l5W" secondAttribute="trailing" constant="20" id="t1f-kL-A24"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lJa-F8-fOZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n0B-Nv-71Y"/>
+                    <connections>
+                        <outlet property="aboutLbl" destination="cQU-gT-l5W" id="ikP-Ft-ow4"/>
+                        <outlet property="imageImg" destination="bCa-l4-ftk" id="hGZ-Ix-WJD"/>
+                        <outlet property="nameLbl" destination="te8-8v-Wo7" id="A4X-09-yQm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2p8-Nv-dn5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2668" y="-543.77811094452773"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="itY-R9-Tls">
@@ -302,6 +368,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ReelBigFish.jpg" width="1880" height="1253"/>
         <image name="vistival.jpg" width="1880" height="1251"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="aen-EP-EHj"/>
+    </inferredMetricsTieBreakers>
 </document>
